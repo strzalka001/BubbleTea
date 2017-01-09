@@ -83,5 +83,15 @@
         android:id="@+id/buttonKoszyk"
         style="@style/btnStyle"
         android:layout_below="@+id/buttonHerbaty"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/reg"
+        android:layout_alignEnd="@+id/reg" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonKoszyk"
+        android:layout_alignLeft="@+id/log"
+        android:layout_alignStart="@+id/log"
+        android:id="@+id/buttonWeb" />
 </RelativeLayout>

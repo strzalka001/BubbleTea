@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -36,7 +37,8 @@
             android:label="@string/title_activity_register_success"
             android:theme="@style/FullscreenTheme" />
         <activity android:name=".RemaindPass" />
-        <activity android:name=".RemindSuccess"></activity>
+        <activity android:name=".RemindSuccess" />
+        <activity android:name=".Web"></activity>
     </application>
 
 </manifest>

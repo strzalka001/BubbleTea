@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button produkty;
     Button herbaty;
     Button koszyk;
+    Button web;
     private Button mLogowanie;
     private Button mRejestracja;
     ArrayList<Produkt> kosz = new ArrayList<Produkt>();
@@ -27,11 +28,13 @@ public class MainActivity extends AppCompatActivity {
         koszyk = (Button) findViewById(R.id.buttonKoszyk);
         mLogowanie = (Button) findViewById(R.id.log);
         mRejestracja = (Button) findViewById(R.id.reg);
+        web = (Button) findViewById(R.id.buttonWeb);
         addListenerOnButtonProdukty();
         addListenerOnButtonHerbaty();
         addListenerOnButtonKoszyk();
         addListenerOnButtonLogowanie();
         addListenerOnButtonRejestracja();
+        addListenerOnButtonWeb();
 
         kosz.add(new Produkt("colka", 3, "mniam"));
 
@@ -97,4 +100,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void addListenerOnButtonWeb() {
+        final Context context = this;
+        web.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, Web.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+
+
+
 }
