@@ -39,7 +39,9 @@
         <activity android:name=".RemaindPass" />
         <activity android:name=".RemindSuccess" />
         <activity android:name=".Web" />
-        <activity android:name=".Opinion"></activity>
+        <activity android:name=".Opinion" />
+        <activity android:name=".Najpopularniejsze" />
+        <activity android:name=".Promocje"></activity>
     </application>
 
 </manifest>
