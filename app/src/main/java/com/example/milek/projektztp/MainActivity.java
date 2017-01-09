@@ -8,16 +8,15 @@ import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     Button produkty;
     Button herbaty;
     Button koszyk;
+    private Button mLogowanie;
+    private Button mRejestracja;
     ArrayList<Produkt> kosz = new ArrayList<Produkt>();
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,18 +25,17 @@ public class MainActivity extends AppCompatActivity {
         produkty = (Button) findViewById(R.id.buttonProdukty);
         herbaty = (Button) findViewById(R.id.buttonHerbaty);
         koszyk = (Button) findViewById(R.id.buttonKoszyk);
+        mLogowanie = (Button) findViewById(R.id.log);
+        mRejestracja = (Button) findViewById(R.id.reg);
         addListenerOnButtonProdukty();
         addListenerOnButtonHerbaty();
         addListenerOnButtonKoszyk();
-
-
+        addListenerOnButtonLogowanie();
+        addListenerOnButtonRejestracja();
 
         kosz.add(new Produkt("colka", 3, "mniam"));
 
-       // kosz = (ArrayList<Produkt>) getIntent().getSerializableExtra("kosz");
-
-
-
+        // kosz = (ArrayList<Produkt>) getIntent().getSerializableExtra("kosz");
     }
 
 
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, ProduktyActivity.class);
-                intent.putExtra("kosz",kosz);
+                intent.putExtra("kosz", kosz);
                 startActivity(intent);
             }
         });
@@ -60,27 +58,43 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, HerbatyActivity.class);
-                intent.putExtra("kosz",kosz);
+                intent.putExtra("kosz", kosz);
                 startActivity(intent);
             }
         });
     }
 
- public void addListenerOnButtonKoszyk() {
+    public void addListenerOnButtonKoszyk() {
         final Context context = this;
         koszyk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, KoszykActivity.class);
-                intent.putExtra("kosz",kosz);
+                intent.putExtra("kosz", kosz);
                 startActivity(intent);
             }
         });
     }
 
+    public void addListenerOnButtonRejestracja() {
+        final Context context = this;
+        mRejestracja.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, Rejestracja.class);
+                startActivity(intent);
+            }
+        });
+    }
 
-
-
-
-
+    public void addListenerOnButtonLogowanie() {
+        final Context context = this;
+        mLogowanie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, Logowanie.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

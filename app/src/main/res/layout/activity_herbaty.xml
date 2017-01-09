@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    style="@style/bg"
     tools:context="com.example.milek.projektztp.HerbatyActivity">
 
     <TextView
@@ -48,6 +49,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="26dp"
         android:layout_marginStart="26dp"
+        style="@style/btnStyle"
         android:layout_below="@+id/rodzaj_kulek"
         android:layout_toRightOf="@+id/textView4" />
 
@@ -95,6 +97,7 @@
         android:layout_alignLeft="@+id/button_dodaj_do_koszyka"
         android:layout_alignStart="@+id/button_dodaj_do_koszyka"
         android:layout_marginBottom="26dp"
+        style="@style/btnStyle"
         android:id="@+id/buttonZobaczKoszyk" />
 
     <Button
@@ -109,6 +112,7 @@
         android:layout_toEndOf="@+id/textView3"
         android:layout_marginLeft="41dp"
         android:layout_marginStart="41dp"
+        style="@style/btnStyle"
         android:enabled="false"/>
 
     <TextView

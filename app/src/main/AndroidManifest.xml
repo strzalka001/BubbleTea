@@ -2,10 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.milek.projektztp">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Bubble Tea"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -17,7 +22,21 @@
         </activity>
         <activity android:name=".ProduktyActivity" />
         <activity android:name=".HerbatyActivity" />
-        <activity android:name=".KoszykActivity"></activity>
+        <activity android:name=".KoszykActivity" />
+        <activity android:name=".Rejestracja" />
+        <activity android:name=".Logowanie" />
+        <activity
+            android:name=".LoginSuccess"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_login_success"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".RegisterSuccess"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_register_success"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".RemaindPass" />
+        <activity android:name=".RemindSuccess"></activity>
     </application>
 
 </manifest>

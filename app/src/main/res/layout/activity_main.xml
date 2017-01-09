@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,11 +9,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    style="@style/bg"
     tools:context="com.example.milek.projektztp.MainActivity">
 
     <Button
         android:text="rejestracja"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:id="@+id/reg"
         android:layout_marginLeft="45dp"
@@ -20,11 +22,18 @@
         android:layout_marginTop="31dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textColor="#01090D"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#D4D4D4"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
 
     <Button
         android:text="logowanie"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:id="@+id/log"
         android:layout_marginRight="41dp"
@@ -32,34 +41,47 @@
         android:layout_alignBaseline="@+id/reg"
         android:layout_alignBottom="@+id/reg"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        style="@style/btnStyle"
+/>
 
     <Button
         android:text="Przejrzyj produkty"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="81dp"
         android:id="@+id/buttonProdukty"
         android:layout_below="@+id/reg"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        style="@style/btnStyle"/>
 
     <Button
-        android:text="skomponuj herbate"
-        android:layout_width="wrap_content"
+        android:text="skomponuj herbatę"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
         android:id="@+id/buttonHerbaty"
         android:layout_below="@+id/buttonProdukty"
         android:layout_alignLeft="@+id/buttonProdukty"
-        android:layout_alignStart="@+id/buttonProdukty" />
+        android:layout_alignStart="@+id/buttonProdukty"
+        style="@style/btnStyle"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bubbletea"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/buttonKoszyk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="koszyk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="25dp"
         android:id="@+id/buttonKoszyk"
+        style="@style/btnStyle"
         android:layout_below="@+id/buttonHerbaty"
-        android:layout_toLeftOf="@+id/log"
-        android:layout_toStartOf="@+id/log" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
