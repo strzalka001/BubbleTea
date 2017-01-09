@@ -62,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.guzik1:
 
+            case R.id.menu_opinia:
+                Intent intent = new Intent(this, Opinion.class);
+                startActivity(intent);
+
                 return true;
 
             case R.id.guzik2:

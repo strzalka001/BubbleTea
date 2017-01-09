@@ -33,7 +33,7 @@
             <item android:id="@+id/butt2"
                 android:title="Nasze lokale" />
 
-            <item android:id="@+id/butt3"
+            <item android:id="@+id/menu_opinia"
                 android:title="Wyraź swoją opinię" />
 
         </menu>
