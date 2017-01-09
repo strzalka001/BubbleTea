@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/but"
+        android:title="Herbaty" >
+        />
+
+        <menu>
+            <item android:id="@+id/but1"
+                android:title="Przeglądaj menu" />
+
+            <item android:id="@+id/but2"
+                android:title="Skomponuj własną herbatę" />
+            <item android:id="@+id/but3"
+                android:title="Najpopularniejsze herbaty" />
+            <item android:id="@+id/but4"
+                android:title="Promocje" />
+        </menu>
+    </item>
+    <item android:id="@+id/guzik1"
+        android:title="koszyk"
+        />
+
+    <item android:id="@+id/guzik2"
+        android:title="O nas" >
+        />
+
+        <menu>
+            <item android:id="@+id/powrot"
+                android:title="Kontakt" />
+
+            <item android:id="@+id/butt2"
+                android:title="Nasze lokale" />
+
+            <item android:id="@+id/butt3"
+                android:title="Wyraź swoją opinię" />
+
+        </menu>
+    </item>
+
+
+    <item android:id="@+id/guzik3"
+        android:title="Opcje" />
+
+    <item android:id="@+id/guzik4"
+        android:title="Pomoc" />
+    />
+
+
+
+        />
+
+
+
+</menu>

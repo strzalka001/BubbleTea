@@ -2,8 +2,12 @@ package com.example.milek.projektztp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -40,6 +44,45 @@ public class MainActivity extends AppCompatActivity {
 
         // kosz = (ArrayList<Produkt>) getIntent().getSerializableExtra("kosz");
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.bubble_menu, menu); //your file name
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(final MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.powrot:
+                super.finish();
+                return true;
+
+            case R.id.guzik1:
+
+                return true;
+
+            case R.id.guzik2:
+                //your code
+                return true;
+
+            case R.id.guzik3:
+
+                return true;
+
+            case R.id.guzik4:
+
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+
+
 
 
     public void addListenerOnButtonProdukty() {

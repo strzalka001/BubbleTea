@@ -12,6 +12,8 @@
     style="@style/bg"
     tools:context="com.example.milek.projektztp.MainActivity">
 
+
+
     <Button
         android:text="rejestracja"
         android:layout_width="120dp"
