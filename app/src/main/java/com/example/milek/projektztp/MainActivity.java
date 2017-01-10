@@ -79,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.but3:
-                Intent intent3 = new Intent(this, Najpopularniejsze.class);
-                startActivity(intent3);
+                //Intent intent3 = new Intent(this, Najpopularniejsze.class);
+                //startActivity(intent3);
             case R.id.but4:
                 Intent intent4 = new Intent(this, Promocje.class);
                 startActivity(intent4);

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_promocje"
     android:layout_width="match_parent"
@@ -10,4 +11,82 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.milek.projektztp.Promocje">
 
+    <TextView
+        android:text="Promocja"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView12"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Aby każdy mógł spróbować naszych specjałów :)"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/btkawajpg"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text=" zniżka -10%"
+        android:textSize="25dp"
+        android:textColor="#ea2c2c"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="      Pyszna Bubble Tea o smaku kawy z owocami leśnymi. Orzeźwiająca, w sam raz na upalne dni. Zniżka obowiązkuje w lokalu na hasło pingwiny w lodówce."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text=" zniżka -10%"
+        android:textSize="25dp"
+        android:textColor="#ea2c2c"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="17dp" />
+
+    <Button
+        android:text="Powrót"
+        style="@style/btnStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16" />
 </RelativeLayout>
