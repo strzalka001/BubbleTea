@@ -46,6 +46,7 @@
         <activity android:name=".Pomoc" />
         <activity android:name=".Zgloszenie" />
         <activity android:name=".PotiwerdzenieZgloszenia" />
+        <activity android:name=".StartActivity"/>
         <activity android:name=".Lokale" />
         <activity android:name=".Opcje" />
     </application>
