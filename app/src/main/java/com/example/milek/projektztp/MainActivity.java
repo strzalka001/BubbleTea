@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -18,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
     Button produkty;
     Button herbaty;
     Button koszyk;
-    Button web;
+    private ImageView mRegister;
+    private ImageView mLogin;
+   // Button web;
     private Button mLogowanie;
     private Button mRejestracja;
     ArrayList<Produkt> kosz = new ArrayList<Produkt>();
@@ -30,15 +33,16 @@ public class MainActivity extends AppCompatActivity {
         produkty = (Button) findViewById(R.id.buttonProdukty);
         herbaty = (Button) findViewById(R.id.buttonHerbaty);
         koszyk = (Button) findViewById(R.id.buttonKoszyk);
-        mLogowanie = (Button) findViewById(R.id.log);
-        mRejestracja = (Button) findViewById(R.id.reg);
-        web = (Button) findViewById(R.id.buttonWeb);
+//        mLogowanie = (Button) findViewById(R.id.log);
+//        mRejestracja = (Button) findViewById(R.id.reg);
+        mRegister = (ImageView) findViewById(R.id.imageView8);
+        mLogin = (ImageView) findViewById(R.id.imageView13);
         addListenerOnButtonProdukty();
         addListenerOnButtonHerbaty();
         addListenerOnButtonKoszyk();
         addListenerOnButtonLogowanie();
         addListenerOnButtonRejestracja();
-        addListenerOnButtonWeb();
+       // addListenerOnButtonWeb();
 
         kosz.add(new Produkt("colka", 3, "mniam"));
 
@@ -145,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void addListenerOnButtonRejestracja() {
         final Context context = this;
-        mRejestracja.setOnClickListener(new View.OnClickListener() {
+        mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, Rejestracja.class);
@@ -156,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void addListenerOnButtonLogowanie() {
         final Context context = this;
-        mLogowanie.setOnClickListener(new View.OnClickListener() {
+        mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, Logowanie.class);
@@ -165,15 +169,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void addListenerOnButtonWeb() {
-        final Context context = this;
-        web.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                Intent intent = new Intent(context, Web.class);
-                startActivity(intent);
-            }
-        });
-    }
+//    public void addListenerOnButtonWeb() {
+//        final Context context = this;
+//        web.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View arg0) {
+//                Intent intent = new Intent(context, Web.class);
+//                startActivity(intent);
+//            }
+//        });
+//    }
 
 }

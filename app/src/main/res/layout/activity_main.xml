@@ -3,97 +3,106 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    style="@style/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    style="@style/bg"
     tools:context="com.example.milek.projektztp.MainActivity">
 
 
-
     <Button
-        android:text="rejestracja"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/reg"
-        android:layout_marginLeft="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="31dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="#01090D"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#D4D4D4"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-        />
-
-    <Button
-        android:text="logowanie"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/log"
-        android:layout_marginRight="41dp"
-        android:layout_marginEnd="41dp"
-        android:layout_alignBaseline="@+id/reg"
-        android:layout_alignBottom="@+id/reg"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:id="@+id/buttonProdukty"
         style="@style/btnStyle"
-/>
-
-    <Button
-        android:text="Przejrzyj produkty"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="81dp"
-        android:id="@+id/buttonProdukty"
-        android:layout_below="@+id/reg"
         android:layout_centerHorizontal="true"
-        style="@style/btnStyle"/>
+        android:layout_marginTop="82dp"
+        android:text="Przejrzyj produkty" />
 
     <Button
-        android:text="skomponuj herbatę"
+        android:id="@+id/buttonHerbaty"
+        style="@style/btnStyle"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:id="@+id/buttonHerbaty"
-        android:layout_below="@+id/buttonProdukty"
         android:layout_alignLeft="@+id/buttonProdukty"
         android:layout_alignStart="@+id/buttonProdukty"
-        style="@style/btnStyle"/>
+        android:layout_below="@+id/buttonProdukty"
+        android:layout_marginTop="22dp"
+        android:text="skomponuj herbatę" />
+
+    <Button
+        android:id="@+id/buttonKoszyk"
+        style="@style/btnStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonHerbaty"
+        android:layout_alignLeft="@+id/buttonHerbaty"
+        android:layout_alignStart="@+id/buttonHerbaty"
+        android:layout_marginTop="22dp"
+        android:text="koszyk" />
+
+    <!--android:layout_alignEnd="@+id/reg"-->
+    <!--android:layout_alignRight="@+id/reg"-->
 
     <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/register" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/imageView13"
+        android:layout_alignRight="@+id/imageView13"
+        android:layout_alignTop="@+id/buttonProdukty"
+        app:srcCompat="@drawable/list" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/imageView14"
+        android:layout_alignRight="@+id/imageView14"
+        android:layout_alignTop="@+id/buttonHerbaty"
+        app:srcCompat="@drawable/create2" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/buttonKoszyk"
+        android:layout_alignLeft="@+id/imageView15"
+        android:layout_alignStart="@+id/imageView15"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/cart" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/imageView8"
+        android:layout_toRightOf="@+id/imageView8"
+        app:srcCompat="@drawable/login" />
+
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/bubbletea"
-        android:id="@+id/imageView3"
         android:layout_below="@+id/buttonKoszyk"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
 
-    <Button
-        android:text="koszyk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:id="@+id/buttonKoszyk"
-        style="@style/btnStyle"
-        android:layout_below="@+id/buttonHerbaty"
-        android:layout_alignRight="@+id/reg"
-        android:layout_alignEnd="@+id/reg" />
-
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/buttonKoszyk"
-        android:layout_alignLeft="@+id/log"
-        android:layout_alignStart="@+id/log"
-        android:id="@+id/buttonWeb" />
 </RelativeLayout>
