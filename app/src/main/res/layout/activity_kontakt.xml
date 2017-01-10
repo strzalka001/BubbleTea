@@ -22,22 +22,84 @@
         android:id="@+id/textViewKontakt" />
 
     <TextView
-        android:text="Adres"
+        android:text="Numer telefonu "
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:id="@+id/textViewAdres"
-        android:layout_below="@+id/textViewKontakt"
+        android:layout_below="@+id/textViewDaneAdres"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView12" />
+
+    <TextView
+        android:text="798 456 342 \n974 354 654"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="TextView"
+        android:text=" Bubble Tea Sp. z.o.o. \n ul. Herbaciana 14/7\n 15-333 Herbatkowo\n Polska "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textViewDaneAdres"
+        android:layout_marginTop="3dp"
         android:layout_below="@+id/textViewAdres"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Adres email"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="11dp"
-        android:id="@+id/textViewDaneAdres" />
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView14" />
+
+    <TextView
+        android:text="bubbletea@gmail.com"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:id="@+id/textView15" />
+
+    <TextView
+        android:text="Media społecznościowe"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView16" />
+
+    <TextView
+        android:text=" Facebook: \n http://www.facebook.com/pages/BubbleTea \nInstagram: \n http://www.instagram.com/BubbleTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Adres"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewAdres"
+        android:layout_below="@+id/textViewKontakt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

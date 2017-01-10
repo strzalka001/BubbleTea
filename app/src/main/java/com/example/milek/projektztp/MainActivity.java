@@ -56,9 +56,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(final MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.powrot:
-                super.finish();
-                return true;
 
             case R.id.guzik1:
 
@@ -76,8 +73,9 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
 
-            case R.id.guzik4:
-
+            case R.id.menu_kontakt:
+                Intent intent2 = new Intent(this, Kontakt.class);
+                startActivity(intent2);
                 return true;
 
             case R.id.but3:

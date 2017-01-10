@@ -27,7 +27,7 @@
         />
 
         <menu>
-            <item android:id="@+id/powrot"
+            <item android:id="@+id/menu_kontakt"
                 android:title="Kontakt" />
 
             <item android:id="@+id/butt2"
