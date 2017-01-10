@@ -78,21 +78,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
                 return true;
 
-            case R.id.but3:
-                //Intent intent3 = new Intent(this, Najpopularniejsze.class);
-                //startActivity(intent3);
-            case R.id.but4:
+            case R.id.btnNajpopularniejsze:
+                Intent intent3 = new Intent(this, Najpopularniejsze.class);
+                startActivity(intent3);
+
+            case R.id.btnPromocje:
                 Intent intent4 = new Intent(this, Promocje.class);
                 startActivity(intent4);
+
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
-
-
-
-
-
 
     public void addListenerOnButtonProdukty() {
         final Context context = this;
@@ -105,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 
     public void addListenerOnButtonHerbaty() {
         final Context context = this;
@@ -163,8 +159,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
 
 }

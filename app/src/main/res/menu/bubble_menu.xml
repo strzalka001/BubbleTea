@@ -2,19 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item android:id="@+id/but"
-        android:title="Herbaty" >
+    <item android:id="@+id/but" android:title="Herbaty" >
         />
 
         <menu>
             <item android:id="@+id/but1"
                 android:title="Przeglądaj menu" />
-
             <item android:id="@+id/but2"
                 android:title="Skomponuj własną herbatę" />
-            <item android:id="@+id/but3"
+            <item android:id="@+id/btnNajpopularniejsze"
                 android:title="Najpopularniejsze herbaty" />
-            <item android:id="@+id/but4"
+            <item android:id="@+id/btnPromocje"
                 android:title="Promocje" />
         </menu>
     </item>
