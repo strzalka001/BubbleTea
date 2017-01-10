@@ -11,31 +11,12 @@
     tools:context="com.example.milek.projektztp.Opcje">
 
 
-
-
-    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-        <CheckBoxPreference
-
-            android:title="pref_sync"
-            android:summary="pref_sync_summ"
-            android:defaultValue="true" />
-        <ListPreference
-            android:dependency="pref_sync"
-            android:key="pref_syncConnectionType"
-            android:title="blabla"
-            android:dialogTitle="bla"
-
-            android:defaultValue="b" />
-    </PreferenceScreen>
-
-
-
-
-
-
-
-
-
-
-
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView27" />
 </RelativeLayout>

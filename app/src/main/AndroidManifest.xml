@@ -47,7 +47,7 @@
         <activity android:name=".Zgloszenie" />
         <activity android:name=".PotiwerdzenieZgloszenia" />
         <activity android:name=".Lokale" />
-        <activity android:name=".Opcje"></activity>
+        <activity android:name=".Opcje" />
     </application>
 
 </manifest>
