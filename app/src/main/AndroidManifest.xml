@@ -42,6 +42,7 @@
         <activity android:name=".Opinion" />
         <activity android:name=".Kontakt" />
         <activity android:name=".Promocje" />
+        <activity android:name=".Najpopularniejsze"></activity>
     </application>
 
 </manifest>
