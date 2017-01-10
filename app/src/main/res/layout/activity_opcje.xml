@@ -12,11 +12,76 @@
 
 
     <TextView
-        android:text="TextView"
+        android:text="Opcje"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#3473A0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/textView27" />
+
+    <TextView
+        android:text="powiadomienia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView28" />
+
+    <Switch
+        android:text="OFF/ON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp"
+        android:id="@+id/switch1"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:text="OFF/ON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch2"
+        android:layout_alignTop="@+id/textView29"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1" />
+
+    <TextView
+        android:text="dźwięki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView28" />
+
+    <TextView
+        android:text="język"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch2"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView30" />
+
+    <Spinner
+        android:entries="@array/jezyki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignTop="@+id/textView30"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignLeft="@+id/switch2"
+        android:layout_alignStart="@+id/switch2" />
+
 </RelativeLayout>
