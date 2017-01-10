@@ -14,7 +14,7 @@
         android:label="Bubble Tea"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,7 +46,7 @@
         <activity android:name=".Pomoc" />
         <activity android:name=".Zgloszenie" />
         <activity android:name=".PotiwerdzenieZgloszenia" />
-        <activity android:name=".StartActivity"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".Lokale" />
         <activity android:name=".Opcje" />
     </application>

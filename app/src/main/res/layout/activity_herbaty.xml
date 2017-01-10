@@ -32,36 +32,6 @@
         android:layout_marginTop="15dp"
         android:id="@+id/textView5" />
 
-    <TextView
-        android:text="Wybierz rodzaj herbaty:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="11dp" />
-
-    <Button
-        android:text="Stwórz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/stworz"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
-        style="@style/btnStyle"
-        android:layout_below="@+id/rodzaj_kulek"
-        android:layout_toRightOf="@+id/textView4" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/stworz"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/kompozycja" />
-
     <Spinner
         android:entries="@array/rodzaje_herbaty"
         android:layout_width="match_parent"
@@ -90,41 +60,70 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:text="Wybierz rodzaj herbaty:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kompozycja"
+        android:layout_alignBottom="@+id/stworz"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+
     <Button
         android:text="Koszyk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/button_dodaj_do_koszyka"
-        android:layout_alignStart="@+id/button_dodaj_do_koszyka"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="35dp"
         style="@style/btnStyle"
-        android:id="@+id/buttonZobaczKoszyk" />
+        android:id="@+id/buttonZobaczKoszyk"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 
     <Button
         android:text="Dodaj do koszyka"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_dodaj_do_koszyka"
+        style="@style/btnStyle"
+        android:enabled="false"
+        android:layout_alignTop="@+id/buttonZobaczKoszyk"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:text="Stwórz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
-        android:id="@+id/button_dodaj_do_koszyka"
-        android:layout_marginBottom="16dp"
-        android:layout_above="@+id/buttonZobaczKoszyk"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="41dp"
+        android:id="@+id/stworz"
         style="@style/btnStyle"
-        android:enabled="false"/>
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/rodzaj_kulek"
+        android:layout_alignLeft="@+id/buttonZobaczKoszyk"
+        android:layout_alignStart="@+id/buttonZobaczKoszyk" />
 
     <TextView
         android:text="Skomponuj własną herbatę:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#3473A0"
         android:textSize="20dp"
         android:id="@+id/textView2"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/kompozycja"
-        android:layout_toEndOf="@+id/kompozycja" />
+         />
 
 
 </RelativeLayout>

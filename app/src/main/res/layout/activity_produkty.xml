@@ -12,48 +12,52 @@
     tools:context="com.example.milek.projektztp.ProduktyActivity">
 
     <TextView
-        android:text="Aktulane produkty:"
+        android:text="Dostępne produkty:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
+        android:textColor="#3473A0"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/textView" />
 
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="315dp"
-        android:id="@+id/lista_produktow"
-        android:layout_below="@id/textView"
-
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonDodajDoKoszykZProduktow"
-        android:layout_marginTop="27dp"
-        android:layout_below="@+id/lista_produktow"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:enabled="false"
-        style="@style/btnStyle"
-        android:text="Dodaj do koszyka" />
-
     <Button
         android:text="Koszyk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/buttonDodajDoKoszykZProduktow"
-        android:layout_toRightOf="@+id/buttonDodajDoKoszykZProduktow"
-        android:layout_toEndOf="@+id/buttonDodajDoKoszykZProduktow"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp"
         style="@style/btnStyle"
-        android:id="@+id/buttonKoszykZProduktow" />
+        android:id="@+id/buttonKoszykZProduktow"
+        android:layout_alignTop="@+id/buttonDodajDoKoszykZProduktow"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:id="@+id/lista_produktow"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonDodajDoKoszykZProduktow"
+        android:enabled="false"
+        style="@style/btnStyle"
+        android:text="Dodaj do koszyka"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginBottom="20dp" />
 
 
 </RelativeLayout>

@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,9 +41,18 @@ public class ProduktyActivity extends AppCompatActivity {
             db.usunProdukt(i.id);
         }
 
-        db.dodajProdukt("sok", 4 , "Sok jest zdrowy");
-        db.dodajProdukt("sok pomaranczowy", 3 , "Sok jest bardzo zdrowy");
-        db.dodajProdukt("colka", 2 , "Colka jest pyszna");
+        db.dodajProdukt("Mango z tapioką", 4 , "Najbardziej aromatyczna");
+        db.dodajProdukt("Zielona z malinowymi", 3 , "Sok jest bardzo zdrowy, hebrata jest przepyszna");
+        db.dodajProdukt("Coca-Cola z tapioką", 2 , "Najlepszy napój");
+        db.dodajProdukt("Mango z tapioką", 4 , "Najbardziej aromatyczna");
+        db.dodajProdukt("Zielona z malinowymi", 3 , "Sok jest bardzo zdrowy, hebrata jest przepyszna");
+        db.dodajProdukt("Coca-Cola z tapioką", 2 , "Najlepszy napój");
+        db.dodajProdukt("Mango z tapioką", 4 , "Najbardziej aromatyczna");
+        db.dodajProdukt("Zielona z malinowymi", 3 , "Sok jest bardzo zdrowy, hebrata jest przepyszna");
+        db.dodajProdukt("Coca-Cola z tapioką", 2 , "Najlepszy napój");
+        db.dodajProdukt("Mango z tapioką", 4 , "Najbardziej aromatyczna");
+        db.dodajProdukt("Zielona z malinowymi", 3 , "Sok jest bardzo zdrowy, hebrata jest przepyszna");
+        db.dodajProdukt("Coca-Cola z tapioką", 2 , "Najlepszy napój");
 
 
         lvProducts = (ListView) findViewById( R.id.lista_produktow);
@@ -75,6 +85,7 @@ public class ProduktyActivity extends AppCompatActivity {
                 kosz = TwojKoszyk.pobierzKoszyk();
                 kosz.add(product);
                 DodajDoKoszyka.setEnabled(false);
+                Toast.makeText(getApplicationContext(),"Dodano do koszyka",Toast.LENGTH_LONG).show();
 
             }
         });
