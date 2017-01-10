@@ -81,10 +81,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btnNajpopularniejsze:
                 Intent intent3 = new Intent(this, Najpopularniejsze.class);
                 startActivity(intent3);
+                return true;
 
             case R.id.btnPromocje:
                 Intent intent4 = new Intent(this, Promocje.class);
                 startActivity(intent4);
+                return true;
 
             default:
                 return super.onOptionsItemSelected(item);
