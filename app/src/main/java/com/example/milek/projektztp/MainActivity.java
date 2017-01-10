@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
 
-            case R.id.guzik1:
+            case R.id.menu_onas:
+                return true;
 
             case R.id.menu_opinia:
                 Intent intent = new Intent(this, Opinion.class);
@@ -65,12 +66,19 @@ public class MainActivity extends AppCompatActivity {
 
                 return true;
 
-            case R.id.guzik2:
-                //your code
+            case R.id.menu_koszyk:
+                Intent intentk = new Intent(this, KoszykActivity.class);
+                startActivity(intentk);
                 return true;
 
-            case R.id.guzik3:
+            case R.id.menu_lokale:
+                Intent intentl = new Intent(this, Lokale.class);
+                startActivity(intentl);
+                return true;
 
+            case R.id.menu_opcje:
+                Intent intento = new Intent(this, Opcje.class);
+                startActivity(intento);
                 return true;
 
             case R.id.menu_kontakt:
@@ -82,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent3 = new Intent(this, Najpopularniejsze.class);
                 startActivity(intent3);
                 return true;
+
 
             case R.id.btnPromocje:
                 Intent intent4 = new Intent(this, Promocje.class);

@@ -45,7 +45,9 @@
         <activity android:name=".Najpopularniejsze" />
         <activity android:name=".Pomoc" />
         <activity android:name=".Zgloszenie" />
-        <activity android:name=".PotiwerdzenieZgloszenia"></activity>
+        <activity android:name=".PotiwerdzenieZgloszenia" />
+        <activity android:name=".Lokale" />
+        <activity android:name=".Opcje"></activity>
     </application>
 
 </manifest>
