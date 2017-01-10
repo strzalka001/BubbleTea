@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pomoc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    style="@style/bg"
+    tools:context="com.example.milek.projektztp.Pomoc">
+
+    <TextView
+        android:text="Napisz do nas!"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView19"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bubbletea"
+        android:id="@+id/imageView11"
+        android:layout_above="@+id/textView19"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Masz problem?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView19"
+        android:layout_toStartOf="@+id/textView19"
+        android:layout_marginBottom="169dp" />
+
+    <Button
+        android:text="+"
+        android:textSize="30dp"
+        style="@style/btnStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:id="@+id/btnAdd" />
+
+    <TextView
+        android:text="dodaj zgłoszenie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19"
+        android:layout_marginRight="97dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="18dp" />
+
+</RelativeLayout>

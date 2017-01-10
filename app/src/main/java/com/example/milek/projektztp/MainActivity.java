@@ -88,6 +88,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent4);
                 return true;
 
+            case R.id.btnPomoc:
+                Intent intent5 = new Intent(this, Pomoc.class);
+                startActivity(intent5);
+                return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

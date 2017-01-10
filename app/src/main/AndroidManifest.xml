@@ -42,7 +42,10 @@
         <activity android:name=".Opinion" />
         <activity android:name=".Kontakt" />
         <activity android:name=".Promocje" />
-        <activity android:name=".Najpopularniejsze"></activity>
+        <activity android:name=".Najpopularniejsze" />
+        <activity android:name=".Pomoc" />
+        <activity android:name=".Zgloszenie" />
+        <activity android:name=".PotiwerdzenieZgloszenia"></activity>
     </application>
 
 </manifest>

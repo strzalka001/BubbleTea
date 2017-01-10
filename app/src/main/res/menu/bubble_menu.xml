@@ -41,7 +41,7 @@
     <item android:id="@+id/guzik3"
         android:title="Opcje" />
 
-    <item android:id="@+id/guzik4"
+    <item android:id="@+id/btnPomoc"
         android:title="Pomoc" />
     />
 
